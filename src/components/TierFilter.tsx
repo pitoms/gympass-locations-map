@@ -55,11 +55,13 @@ export function TierFilter({ selectedTiers, onTierChange }: TierFilterProps) {
                   : "hover:bg-gray-50"
               }
             `}
-            style={{
-              ringColor: selectedTiers.includes(tier)
-                ? PLAN_TIER_COLORS[tier]
-                : undefined,
-            }}
+            style={
+              {
+                "--ring-color": selectedTiers.includes(tier)
+                  ? PLAN_TIER_COLORS[tier]
+                  : undefined,
+              } as React.CSSProperties
+            }
           >
             <div
               className={`
