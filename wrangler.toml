@@ -1,0 +1,5 @@
+name = "gympass-locations-map"
+compatibility_date = "2026-02-02"
+
+[assets]
+directory = "./dist"
